@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B6 Team — Mobile Games & Applications Studio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="B6 Team is an independent mobile game developer and publisher. Creators of casual arcade games, puzzles, and creator utility tools for Android.">
+    <meta name="keywords" content="B6 Team, B6 Studio, mobile game developer, Android games, Dungeon Sweeper X, Knife Hit Max">
+    <meta name="author" content="B6 Team">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://b6-team.site/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://b6-team.site/">
+    <meta property="og:title" content="B6 Team — Mobile Games & Applications Studio">
+    <meta property="og:description" content="Independent game studio creating engaging, casual mobile games for players around the world.">
+
+    <!-- Fonts: Inter & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='10' fill='%232563eb'/><path d='M12 28V12h6.5a4.5 4.5 0 0 1 3.5 7.3A5 5 0 0 1 20 28H12zm4-9h2.5a2 2 0 1 0 0-4H16v4zm0 6.5h3a2.5 2.5 0 1 0 0-5H16v5z' fill='white'/></svg>">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Top Navigation Bar -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+            <!-- Studio Brand -->
+            <a href="#" class="flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center text-white font-black text-lg shadow-sm">
+                    B6
+                </div>
+                <div>
+                    <span class="font-bold text-slate-900 tracking-tight text-base block leading-none">B6 Team</span>
+                    <span class="text-[11px] text-slate-500 font-medium tracking-wide">Game Studio</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+                <a href="#games" class="hover:text-blue-600 transition-colors">Our Games</a>
+                <a href="#about" class="hover:text-blue-600 transition-colors">About</a>
+                <a href="https://policies.b6-team.site/" target="_blank" class="text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-1 transition-colors">
+                    Privacy Policies
+                    <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                </a>
+                <a href="#support" class="hover:text-blue-600 transition-colors">Support</a>
+            </nav>
+
+            <!-- Contact Button -->
+            <div class="flex items-center gap-3">
+                <a href="mailto:support@b6-team.site" class="inline-flex items-center text-xs font-semibold px-4 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 transition">
+                    Contact Studio
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow">
+
+        <!-- Hero Section -->
+        <section class="bg-white border-b border-slate-200 py-16 sm:py-24 px-4 sm:px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <!-- Tag pill -->
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs font-semibold mb-6">
+                    <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+                    Independent Mobile Studio
+                </div>
+
+                <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                    Playful, engaging games <br class="hidden sm:inline" />
+                    crafted for mobile players.
+                </h1>
+
+                <p class="text-slate-600 text-base sm:text-lg mt-5 max-w-2xl mx-auto leading-relaxed">
+                    We develop intuitive casual, puzzle, and action titles published on the Google Play Store, designed with smooth performance and clean gameplay.
+                </p>
+
+                <!-- Actions -->
+                <div class="mt-8 flex flex-wrap items-center justify-center gap-3.5">
+                    <a href="#games" class="px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm shadow-sm transition">
+                        Browse Our Games
+                    </a>
+                    <a href="https://policies.b6-team.site/" target="_blank" class="px-5 py-2.5 rounded-lg bg-white hover:bg-slate-50 text-slate-700 font-semibold text-sm border border-slate-300 shadow-sm transition flex items-center gap-1.5">
+                        <span>Privacy Center</span>
+                        <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="mt-14 pt-8 border-t border-slate-100 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div>
+                        <div class="text-2xl font-bold text-slate-900">6+</div>
+                        <div class="text-xs text-slate-500 font-medium mt-0.5">Live Apps & Games</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-slate-900">Android</div>
+                        <div class="text-xs text-slate-500 font-medium mt-0.5">Google Play Ecosystem</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-slate-900">100%</div>
+                        <div class="text-xs text-slate-500 font-medium mt-0.5">Policy Compliant</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-slate-900">Certified</div>
+                        <div class="text-xs text-slate-500 font-medium mt-0.5">app-ads.txt Verified</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Games Catalog Section -->
+        <section id="games" class="py-16 px-4 sm:px-6 max-w-6xl mx-auto">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Published Titles</h2>
+                    <p class="text-slate-500 text-sm mt-1">Explore our collection of casual games and mobile creator tools</p>
+                </div>
+
+                <!-- Filter Controls -->
+                <div class="flex items-center gap-1 p-1 bg-slate-200/70 rounded-lg text-xs font-semibold text-slate-600">
+                    <button class="filter-btn px-3 py-1.5 rounded-md bg-white text-slate-900 shadow-sm transition" data-filter="all">All</button>
+                    <button class="filter-btn px-3 py-1.5 rounded-md hover:text-slate-900 transition" data-filter="games">Games</button>
+                    <button class="filter-btn px-3 py-1.5 rounded-md hover:text-slate-900 transition" data-filter="tools">Utilities</button>
+                </div>
+            </div>
+
+            <!-- Games Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Game 1: Dungeon Sweeper X -->
+                <article class="game-item bg-white border border-slate-200 rounded-xl p-5 hover:border-blue-400 hover:shadow-md transition flex flex-col justify-between" data-category="games">
+                    <div>
+                        <div class="flex items-start gap-4">
+                            <!-- App Icon -->
+                            <div class="w-14 h-14 rounded-2xl bg-amber-500 text-white flex items-center justify-center font-bold text-xl shadow-sm shrink-0">
+                                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 2l8 4.5v5.5c0 5-3.5 9.5-8 10-4.5-.5-8-5-8-10V6.5L12 2z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v8m-4-4h8"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="text-[11px] font-semibold tracking-wide uppercase text-amber-700 bg-amber-50 px-2 py-0.5 rounded">
+                                    Puzzle Adventure
+                                </span>
+                                <h3 class="text-base font-bold text-slate-900 mt-1">Dungeon Sweeper X</h3>
+                                <p class="text-xs text-slate-500 mt-0.5">Android Game</p>
+                            </div>
+                        </div>
+
+                        <p class="text-slate-600 text-xs sm:text-sm mt-4 leading-relaxed">
+                            Minesweeping logic combined with dungeon crawler exploration. Uncover hidden pathways, disarm traps, and conquer challenging levels.
+                        </p>
+                    </div>
+
+                    <div class="mt-6 pt-3.5 border-t border-slate-100 flex items-center justify-between text-xs">
+                        <span class="text-slate-600 font-medium">B6 Team</span>
+                        <a href="https://policies.b6-team.site/dungeon-sweeper-x/" target="_blank" class="text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-1">
+                            Privacy Policy
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Game 2: Knife Hit Max -->
+                <article class="game-item bg-white border border-slate-200 rounded-xl p-5 hover:border-blue-400 hover:shadow-md transition flex flex-col justify-between" data-category="games">
+                    <div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-indigo-600 text-white flex items-center justify-center font-bold text-xl shadow-sm shrink-0">
+                                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.5 9.5L20 4m0 0l-4 1 3 3 1-4zM10.5 13.5L4 20m0 0l4-1-3-3-1 4zM8 8l8 8"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="text-[11px] font-semibold tracking-wide uppercase text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded">
+                                    Arcade Reflex
+                                </span>
+                                <h3 class="text-base font-bold text-slate-900 mt-1">Knife Hit Max</h3>
+                                <p class="text-xs text-slate-500 mt-0.5">Android Game</p>
+                            </div>
+                        </div>
+
+                        <p class="text-slate-600 text-xs sm:text-sm mt-4 leading-relaxed">
+                            Fast-paced precision target game. Time your throws to hit rotating boards, unlock unique blades, and defeat tricky boss challenges.
+                        </p>
+                    </div>
+
+                    <div class="mt-6 pt-3.5 border-t border-slate-100 flex items-center justify-between text-xs">
+                        <span class="text-slate-600 font-medium">B6 Team</span>
+                        <a href="https://policies.b6-team.site/knife-hit-max/" target="_blank" class="text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-1">
+                            Privacy Policy
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Game 3: Swordwing -->
+                <article class="game-item bg-white border border-slate-200 rounded-xl p-5 hover:border-blue-400 hover:shadow-md transition flex flex-col justify-between" data-category="games">
+                    <div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-cyan-600 text-white flex items-center justify-center font-bold text-xl shadow-sm shrink-0">
+                                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l9 9-9 9-9-9 9-9zm0 5l4 4-4 4-4-4 4-4z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="text-[11px] font-semibold tracking-wide uppercase text-cyan-800 bg-cyan-50 px-2 py-0.5 rounded">
+                                    Action Flyer
+                                </span>
+                                <h3 class="text-base font-bold text-slate-900 mt-1">Swordwing</h3>
+                                <p class="text-xs text-slate-500 mt-0.5">Android Game</p>
+                            </div>
+                        </div>
+
+                        <p class="text-slate-600 text-xs sm:text-sm mt-4 leading-relaxed">
+                            Dynamic aerial combat and dodging action. Upgrade futuristic craft weapons and survive against waves of agile flying opponents.
+                        </p>
+                    </div>
+
+                    <div class="mt-6 pt-3.5 border-t border-slate-100 flex items-center justify-between text-xs">
+                        <span class="text-slate-600 font-medium">B6 Team</span>
+                        <a href="https://policies.b6-team.site/swordwing/" target="_blank" class="text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-1">
+                            Privacy Policy
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Game 4: Fruit Basket Rush -->
+                <article class="game-item bg-white border border-slate-200 rounded-xl p-5 hover:border-blue-400 hover:shadow-md transition flex flex-col justify-between" data-category="games">
+                    <div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-rose-500 text-white flex items-center justify-center font-bold text-xl shadow-sm shrink-0">
+                                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="9"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v3m0 0a3 3 0 0 0 3-3"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="text-[11px] font-semibold tracking-wide uppercase text-rose-700 bg-rose-50 px-2 py-0.5 rounded">
+                                    Casual Fun
+                                </span>
+                                <h3 class="text-base font-bold text-slate-900 mt-1">Fruit Basket Rush</h3>
+                                <p class="text-xs text-slate-500 mt-0.5">Android Game</p>
+                            </div>
+                        </div>
+
+                        <p class="text-slate-600 text-xs sm:text-sm mt-4 leading-relaxed">
+                            A colorful reflex arcade game. Catch fresh harvest fruits falling from the sky while dodging hazardous spoiled items.
+                        </p>
+                    </div>
+
+                    <div class="mt-6 pt-3.5 border-t border-slate-100 flex items-center justify-between text-xs">
+                        <span class="text-slate-600 font-medium">B6 Team</span>
+                        <a href="https://policies.b6-team.site/fruit-basket-rush/" target="_blank" class="text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-1">
+                            Privacy Policy
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Game 5: 2K4E -->
+                <article class="game-item bg-white border border-slate-200 rounded-xl p-5 hover:border-blue-400 hover:shadow-md transition flex flex-col justify-between" data-category="games">
+                    <div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-purple-600 text-white flex items-center justify-center font-bold text-xl shadow-sm shrink-0">
+                                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="7" height="7" rx="1.5"/>
+                                    <rect x="14" y="3" width="7" height="7" rx="1.5"/>
+                                    <rect x="3" y="14" width="7" height="7" rx="1.5"/>
+                                    <rect x="14" y="14" width="7" height="7" rx="1.5"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="text-[11px] font-semibold tracking-wide uppercase text-purple-700 bg-purple-50 px-2 py-0.5 rounded">
+                                    Brain & Numbers
+                                </span>
+                                <h3 class="text-base font-bold text-slate-900 mt-1">2K4E</h3>
+                                <p class="text-xs text-slate-500 mt-0.5">Android Game</p>
+                            </div>
+                        </div>
+
+                        <p class="text-slate-600 text-xs sm:text-sm mt-4 leading-relaxed">
+                            Brain-teasing grid number puzzle designed for mental workout. Merge tiles, calculate strategies, and reach high score milestones.
+                        </p>
+                    </div>
+
+                    <div class="mt-6 pt-3.5 border-t border-slate-100 flex items-center justify-between text-xs">
+                        <span class="text-slate-600 font-medium">B6 Team</span>
+                        <a href="https://policies.b6-team.site/2k4e/" target="_blank" class="text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-1">
+                            Privacy Policy
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Tool 6: Social Helper Utilities -->
+                <article class="game-item bg-white border border-slate-200 rounded-xl p-5 hover:border-blue-400 hover:shadow-md transition flex flex-col justify-between" data-category="tools">
+                    <div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-teal-600 text-white flex items-center justify-center font-bold text-xl shadow-sm shrink-0">
+                                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="text-[11px] font-semibold tracking-wide uppercase text-teal-700 bg-teal-50 px-2 py-0.5 rounded">
+                                    Creator Utility
+                                </span>
+                                <h3 class="text-base font-bold text-slate-900 mt-1">Mobile Social Tools</h3>
+                                <p class="text-xs text-slate-500 mt-0.5">Utility Application</p>
+                            </div>
+                        </div>
+
+                        <p class="text-slate-600 text-xs sm:text-sm mt-4 leading-relaxed">
+                            Practical helper tools built to assist mobile social media managers and creators with fast workflow automation and data handling.
+                        </p>
+                    </div>
+
+                    <div class="mt-6 pt-3.5 border-t border-slate-100 flex items-center justify-between text-xs">
+                        <span class="text-slate-600 font-medium">B6 Team</span>
+                        <a href="https://policies.b6-team.site/tiktok-social-tool/" target="_blank" class="text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-1">
+                            Privacy Policy
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Developer Principles / Google Play Compliance Section -->
+        <section id="about" class="bg-white border-y border-slate-200 py-16 px-4 sm:px-6">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Developer Commitments</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-1.5">Built on Trust & Transparency</h2>
+                    <p class="text-slate-500 text-sm mt-2">We build software strictly following Google Play Developer Guidelines</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="p-6 rounded-xl bg-slate-50 border border-slate-200">
+                        <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center font-bold mb-4">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base">User Privacy First</h3>
+                        <p class="text-slate-600 text-xs sm:text-sm mt-2 leading-relaxed">
+                            Clear, dedicated privacy statements for every title. We only request device permissions strictly necessary for app functionality.
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-xl bg-slate-50 border border-slate-200">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold mb-4">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base">Verified Monetization</h3>
+                        <p class="text-slate-600 text-xs sm:text-sm mt-2 leading-relaxed">
+                            Monetization complies with the IAB app-ads.txt standard and verified Google AdMob networks to safeguard user ad experiences.
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-xl bg-slate-50 border border-slate-200">
+                        <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center font-bold mb-4">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base">Family & Child Safety</h3>
+                        <p class="text-slate-600 text-xs sm:text-sm mt-2 leading-relaxed">
+                            Our casual titles suitable for family audiences adhere strictly to COPPA guidelines and regional youth protection requirements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support / Contact Section -->
+        <section id="support" class="py-16 px-4 sm:px-6 max-w-4xl mx-auto">
+            <div class="bg-blue-50 border border-blue-100 rounded-2xl p-8 sm:p-10 flex flex-col sm:flex-row items-center justify-between gap-6">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900">Need support with our games?</h3>
+                    <p class="text-slate-600 text-sm mt-1">Our support team is available to assist players and partners.</p>
+                    <div class="mt-4 flex items-center gap-2 text-sm text-slate-700">
+                        <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        <span class="font-medium">support@b6-team.site</span>
+                    </div>
+                </div>
+                <a href="mailto:support@b6-team.site" class="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold text-sm shadow-sm transition whitespace-nowrap">
+                    Send Email
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-10 px-4 sm:px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-2.5">
+                <div class="w-7 h-7 rounded-lg bg-blue-600 text-white font-bold text-xs flex items-center justify-center">
+                    B6
+                </div>
+                <div>
+                    <div class="font-bold text-sm text-slate-900">B6 Team Studio</div>
+                    <div class="text-[11px] text-slate-500">Official Developer Website</div>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="flex flex-wrap items-center justify-center gap-6 text-xs font-medium text-slate-600">
+                <a href="https://policies.b6-team.site/" target="_blank" class="hover:text-blue-600 transition">Privacy Policies</a>
+                <a href="/app-ads.txt" class="hover:text-blue-600 transition">app-ads.txt</a>
+                <a href="/sitemap.xml" class="hover:text-blue-600 transition">Sitemap</a>
+                <a href="mailto:support@b6-team.site" class="text-blue-600 hover:underline">support@b6-team.site</a>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto mt-8 pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-2">
+            <div>&copy; 2026 B6 Team. All rights reserved.</div>
+            <div>Published for Android & Google Play.</div>
+        </div>
+    </footer>
+
+    <!-- Filter Tab Script -->
+    <script>
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const gameItems = document.querySelectorAll('.game-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-white', 'text-slate-900', 'shadow-sm');
+                    b.classList.add('text-slate-600');
+                });
+                btn.classList.add('bg-white', 'text-slate-900', 'shadow-sm');
+                btn.classList.remove('text-slate-600');
+
+                const filter = btn.getAttribute('data-filter');
+
+                gameItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'flex';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
