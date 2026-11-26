@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://b6-team.site/sitemap.xml
+Sitemap: https://b6-team.com/sitemap.xml

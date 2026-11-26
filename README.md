@@ -20,17 +20,17 @@ b6_team_web/
 
 ---
 
-## 🚀 Các cách Deploy lên https://b6-team.site
+## 🚀 Các cách Deploy lên https://b6-team.com
 
 ### Cách 1: Phục vụ trực tiếp qua Nginx trên VPS (Khuyên dùng)
-Nếu VPS của bạn đang dùng Nginx làm reverse proxy cho domain `b6-team.site`:
+Nếu VPS của bạn đang dùng Nginx làm reverse proxy cho domain `b6-team.com`:
 1. Copy toàn bộ các file trong thư mục này vào VPS tại thư mục: `/var/www/b6_team_web/`
 2. Cấu hình Nginx:
    ```nginx
    server {
        listen 80;
        listen 443 ssl;
-       server_name b6-team.site;
+       server_name b6-team.com;
 
        root /var/www/b6_team_web;
        index index.html;
@@ -84,5 +84,5 @@ def sitemap():
 ## 🔍 Bước tiếp theo sau khi deploy
 1. Mở [Google Search Console](https://search.google.com/search-console).
 2. Vào mục **Sitemaps** -> Thêm `sitemap.xml`.
-3. Nhập URL `https://b6-team.site/` vào thanh kiểm tra -> Bấm **Test Live URL** -> Bấm **Request Indexing**.
+3. Nhập URL `https://b6-team.com/` vào thanh kiểm tra -> Bấm **Test Live URL** -> Bấm **Request Indexing**.
 4. Vào mục cảnh báo -> Bấm **Validate Fix**.
